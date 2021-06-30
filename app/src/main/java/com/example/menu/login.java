@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
     private void consumir(String user, String pass)
     {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url="https://56e4e2e68623.ngrok.io/login_autentication/"+user+"/"+pass+"";
+        String url="https://344d9f10ae64.ngrok.io/login_autentication/"+user+"/"+pass+"";
         JsonArrayRequest jsonObjectRequest = new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
                     @Override

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements pokeballFragment.
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Dashboard");
+        getSupportActionBar().setTitle("Aplicación Pokemon");
         navigationView = findViewById(R.id.nested);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -105,12 +105,15 @@ public class MainActivity extends AppCompatActivity implements pokeballFragment.
         closeDrawer();
         if(menuItem.getItemId() == R.id.inf_pokemon){
             loadFragment(new pokeballFragment());
+            getSupportActionBar().setTitle("Menu Pokemon");
         }
         if(menuItem.getItemId() == R.id.lista_pokemon){
             loadFragment(new squirtleFragment());
+            getSupportActionBar().setTitle("Lista Pokemon");
         }
         if(menuItem.getItemId() == R.id.modificar_usuario){
             loadFragment(new PikachuFragment());
+            getSupportActionBar().setTitle("Modificar Pokemon");
         }
         return true;
     }
