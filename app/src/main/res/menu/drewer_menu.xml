@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/icons8_diamond_96px_2"
+        android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/inf_pokemon"
+                android:icon="@drawable/icons8_diamond_96px_2"
+                android:iconTint="#27BDAF"
+                android:title="Inicio de información" />
+            <item
+                android:id="@+id/lista_pokemon"
+                android:icon="@drawable/icons8_pokemon_96px"
+                android:iconTint="#FFEB3B"
+                android:title="Lista de pokemon" />
+            <item
+                android:id="@+id/modificar_usuario"
+                android:icon="@drawable/bullscaner"
+                android:iconTint="#4CAF50"
+                android:title="Modificar pokemon " />
+            <item
+                android:id="@+id/Eliminar_registros"
+                android:icon="@drawable/meowth"
+                android:iconTint="#FFEB3B"
+                android:title="Eliminar pokemon " />
+            <item
+                android:id="@+id/pokemon_destacados"
+                android:icon="@drawable/corona2"
+                android:iconTint="#C4F1E829"
+                android:title="Buscador pokemon" />
+        </menu>
+    </item>
+    <item android:id="@+id/respot" android:title="Reportes">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/userd1"
+                    android:icon="@drawable/plantita"
+                    android:iconTint="#819E19"
+                    android:title="Pokemon destacados" />
+                <item
+                    android:id="@+id/userd2"
+                    android:iconTint="#4AC372"
+                    android:icon="@drawable/encubadora"
+                    android:title="Venta de pokemon" />
+                <item
+                    android:id="@+id/userd3"
+                    android:iconTint="#FF9800"
+                    android:icon="@drawable/corona"
+                    android:title="Reporte de batallas" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Redes">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/home1"
+                    android:icon="@drawable/icons8_facebook_52px"
+                    android:title="Facebook" />
+                <item
+                    android:id="@+id/next1"
+                    android:icon="@drawable/icons8_instagram_240px"
+                    android:title="Instagram" />
+                <item
+                    android:id="@+id/next2"
+                    android:icon="@drawable/icons8_reddit_48px"
+                    android:title="Reddit" />
+            </group>
+        </menu>
+    </item>
+</menu>
